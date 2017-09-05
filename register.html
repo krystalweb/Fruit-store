@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div class="register_wrap">
+			<div class="register_top">
+				<div class="register_logo">
+					
+				</div>
+			</div>
+			<div class="register_btm">
+				<div class="register">
+					<div class="register_tit">
+						<span class="title">欢迎加入，请注册</span>
+						<span>
+							已有账户？<a href="#">现在登陆</a>
+						</span>
+					</div>
+					<form action="#" method="post" name="formUser">
+						<table width="100%" align="left" border="0" cellspacing="9" cellpadding="3">
+							<tbody>
+								<tr>
+									<td width="13%" align="right">用户名</td>
+									<td width="87%">
+										<input type="text" size="35" id="username"/>
+										<span id="username_notice" style="color: #ff0000;">
+											*
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">eamil</td>
+									<td>
+										<input type="text" size="35" id="email"/>
+										<span id="email_notice" style="color: #ff0000;">
+											*
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">密码</td>
+									<td>
+										<input type="password" id="password" size="35"/>
+										<span id="password_notice" style="color: #ff0000;">
+											*
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">密码强度</td>
+									<td>
+										<table border="0" cellspacing="1" cellpadding="0">
+											<tbody>
+												<tr align="center">
+													<td width="33%" id="pwd_low">弱</td>
+													<td width="33%" id="pwd_middle">中</td>
+													<td width="33%" id="pwd_high">强</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">确认密码</td>
+									<td>
+										<input type="password" size="35" id="confirm_password" />
+										<span id="confirm_notice" style="color: #ff0000;">
+											*
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">收件人手机</td>
+									<td>
+										<input type="text" class="inputbg" size="35"/>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>
+										<label>
+											<input type="checkbox" name="agreement" value="1" checked="checked"/>
+											我以看过并接受《
+											<a href="#" style="color: blue;" target="_blank">用户协议</a>
+											》
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>
+										<input type="button" name="submit" size="20" value class="us_submit"/>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td class="actionSub">
+										<a href="#">我已有账号，我要登陆</a><br />
+										<a href="#">您忘记了密码吗？</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+				<div class="tc">
+					&copy; 2005-2017 那果儿 版权所有，并保留所有权利。
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	
+		window.onload=function(){
+			var sub=document.getElementsByName("submit")[0];
+			var errMsg1="";
+			var errMsg2="";
+			var errMsg3="";
+			var errMsg4="";
+			var username=document.getElementById("username");
+			username.focus();
+			
+			sub.onclick=function(){
+				var flag=true;
+				var username=document.getElementById("username").value;
+				var email=document.getElementById("email").value;
+				var pass=document.getElementById("password").value;
+				var confirm=document.getElementById("confirm_password").value;
+				
+				var user=/^[\u4e00-\u9fa5\w]{2,6}$/;
+				var mail=/^\w+@[a-z0-9]+(\.[a-z]+){1,3}$/;
+				var word=/^\w{6,22}/;
+				
+				errMsg1="";
+				errMsg2="";
+				errMsg3="";
+				errMsg4="";
+				if(!username){
+				errMsg1="昵称不能为空";
+				flog=false;
+				}else if(!user.test(username)){
+					errMsg1="昵称错误";
+					flog=false;
+				}
+				document.getElementById("username_notice").innerHTML=errMsg1;
+				
+				if(!email){
+				errMsg2="邮箱不能为空";
+				flog=false;
+				}else if(!mail.test(email)){
+					errMsg2="邮箱错误";
+					flog=false;
+				}
+				document.getElementById("email_notice").innerHTML=errMsg2;
+				
+				if(!pass){
+				errMsg3="密码不能为空";
+				flog=false;
+				}else if(!word.test(pass)){
+					errMsg3="密码错误";
+					flog=false;
+				}
+				document.getElementById("password_notice").innerHTML=errMsg3;
+				
+				if(!confirm){
+				errMsg4="确认密码不能为空";
+				flog=false;
+				}else if(confirm!=pass){
+					errMsg4="密码错误";
+					flog=false;
+				}
+				document.getElementById("confirm_notice").innerHTML=errMsg4;
+				
+	
+			}
+			
+			function clears(){
+					document.getElementById("username_notice").innerHTML="";
+					document.getElementById("email_notice").innerHTML="";
+					document.getElementById("password_notice").innerHTML="";
+		        }
+			
+
+		}
+	</script>
+</html>

@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #515151;}
+li{list-style: none;}
+.footer.wrap{width: 100%; height: 677px;}
+.footer_container{width: 1190px; height: 677px; margin: 0 auto; background: white;}
+.footer_container .footercont{margin-top: 30px; padding-left: 10px; box-sizing: border-box;}
+.footer_container .top-img{width: 1170px; height: 271px;}
+
+/*-----列表-------*/
+.footer_container .service_clearfix{width: 1170px; height: 140px; background: #f5f7fa; position: relative; overflow: hidden;}
+.footer_container .service_clearfix dl{float: left; margin-left: 50px; margin-top: 25px; width: 120px; overflow: hidden;}
+.footer_container .service_clearfix dl dd{font-size: 10px; font-weight: bold; color: #515151;}
+.footer_container .service_clearfix dl dt{margin-top: 10px; font-size: 12px; }
+.footer_container .online ul{width: 200px; height: 100px; position: absolute; right: 20px; top: 10px;}
+.footer_container .online ul li{float: right; margin-top: 10px; overflow: hidden;}
+.footer_container .online ul .itemr1{font-size: 20px;}
+.footer_container .online ul .itemr1 .tel{width: 40px; height: 25px; background-image: url(../img/foot.top.img/tel_03.png);
+background-repeat: no-repeat; position: absolute; left: 50px;}
+.footer_container .online ul .itemr2{font-size: 12px;}
+.footer_container .online ul .itemr3{width: 190px; height: 40px; background: #85c143; padding-right: 20px; border-radius: 5px;
+box-sizing: border-box; overflow: hidden;}
+.footer_container .online ul .itemr3 a{float: right; color: white; line-height: 40px; font-size: 16px; overflow: hidden;}
+.footer_container .online ul .itemr3 .smile{width: 33px; height: 37px; background-image: url(../img/foot.top.img/smile.png);
+background-repeat: no-repeat; position: absolute; left: 20px;}
+
+/*-----底部-----*/
+.footer_container .linker{width: 1190px; height: 60px; text-align: center; line-height: 60px; font-size: 14px;
+background: #f5f7fa; margin-top: 10px;} 
+.footer_container .footerbtm{width: 1190px; height: 195px; font-size: 10px; text-align: center; position: relative;
+background: #f5f7fa;}
+.footer_container .footerbtm .info img{width: 220px; height: 16px; margin-top: 40px; position: absolute; top: 10px; right: 490px;} 
+.footer_container .footerbtm .believe{margin-top: 55px; position: absolute; top: 50px; left: 425px;}
+

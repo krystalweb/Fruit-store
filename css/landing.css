@@ -1,0 +1,23 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #dd4250;}
+a:hover{color: greenyellow;}
+.landing_warp{width: 100%; height: 800px;}
+.landing_warp .landing_top{height: 100px; background: #ececec;}
+.landing_warp .landing_top .landing_logo{width: 139px; height: 53px; background-image: url(../img/landing.img/mclogo.png);
+background-repeat: no-repeat; position: absolute; top: 20px; left: 270px;}
+
+.landing_warp .landing_con{height: 700px; background: #f2f2f2; position: relative;}
+.landing_warp .landing_con .landing_bgimg{width: 525px; height: 473px; background-image: url(../img/landing.img/welcome.jpg);
+background-repeat: no-repeat; position: absolute; top: 60px; left: 240px;}
+.landing_warp .landing_con .landing{width: 400px; height: 455px; background: #fff; position: absolute;
+top: 80px; right: 240px;}
+.landing_warp .landing_con .landing .landing_tit{width: 400px; height: 110px; padding-top: 58px;
+padding-left: 25px; box-sizing: border-box;}
+.landing_warp .landing_con .landing h1{font-size: 22px; color: #ff7e57;}
+.landing_warp .landing .us_submit{width: 132px; height: 42px; background-image: url(../img/landing.img/bnt_ur_log.gif);
+background-repeat: no-repeat; cursor: pointer;}
+.landing_warp .landing .inputbg{height: 35px;}
+.landing_warp .landing .ustopline{position: absolute; left: 65px; bottom: 40px;}
+
+.landing_warp .landing_con .landing_btm{height: 120px; position: absolute; bottom: -25px; left: 560px;}
+.landing_warp .landing_con .landing_btm .tc{font-size: 12px; color: #656d78;}

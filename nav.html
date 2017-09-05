@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			li{list-style: none;}
+			a{text-decoration: none;}
+			/*---------导航栏---------*/
+			.nav_wrap{width: 100%; height: 50px;}
+			.nav_wrap .nav{width: 1190px; height: 50px; margin: 0 auto; background: #404144; position: relative;
+			border-radius: 5px;}
+			.nav_wrap .nav .btnnav{width: 230px; height: 50px; background: #32c632; color: white;
+			line-height: 50px; font-size: 18px; padding-left: 20px; box-sizing: border-box;
+			 position: relative; border-radius: 5px 0 0 5px; cursor: pointer;}
+			.nav_wrap .nav .btnnav:after{content: ""; border-top: 5px solid #fff; border-left: 5px solid transparent;
+			border-right: 5px solid transparent; position: absolute; top: 46%; right: 25px; z-index: 999;}
+			.nav_wrap .nav .links_clearfix ul{width: 960px; height: 50px; position: absolute; top: 0; left: 230px;}
+			.nav_wrap .nav .links_clearfix ul li{list-style: none; float: left; margin-left: 35px;}
+			.nav_wrap .nav .links_clearfix ul li a{font-size: 18px; line-height: 50px; color: white;}
+			
+			.nav_wrap .nav .shoplist{width: 230px; height: 570px; position: absolute; top: 50px; left: 0;
+			}
+			
+			.nav_wrap .nav .shoplist ul li{width: 230px; height: 70px; border: 1px solid #d1d1d1;
+			padding-top: 18px; padding-left: 18px; box-sizing: border-box; background: #fff; cursor: pointer;
+			border-top: none; list-style: none;}
+			.nav_wrap .nav .shoplist ul li a{font-size: 16px; color: #8bc632;}
+			.nav_wrap .nav .shoplist ul li:hover{background: skyblue;}
+		</style>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<div class="nav_wrap">
+				<div class="nav">
+					<div class="clearfix">
+						<div class="btnnav" id="btnnav">
+							全部商品分类
+							<em class="icon"></em>
+						</div>
+						<div class="links_clearfix">
+							<ul class="links_li">
+								<li><a href="#">首页</a></li>
+								<li><a href="#" title="DIY拼盘">DIY拼盘</a></li>
+								<li><a href="#" title="缤纷果汁">缤纷果汁</a></li>
+								<li><a href="#" title="送礼佳品">送礼佳品</a></li>
+								<li><a href="#" title="拼盘套餐">拼盘套餐</a></li>
+								<li><a href="#" title="积分商城">积分商城</a></li>
+								<li><a href="#" title="水果百科">水果百科</a></li>
+								<li><a href="#" title="留言板">留言板</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="shoplist">
+						<ul class="lists">
+							<li><a href="#" class="tit" title="DIY拼盘">DIY拼盘</a></li>
+							<li><a href="#" class="tit" title="缤纷果汁">缤纷果汁</a></li>
+							<li><a href="#" class="tit" title="送礼佳品">送礼佳品</a></li>
+							<li><a href="#" class="tit" title="拼盘套餐">拼盘套餐</a></li>
+							<li><a href="#" class="tit" title="国内水果">国内水果</a></li>
+							<li><a href="#" class="tit" title="进口水果">进口水果</a></li>
+							<li><a href="#" class="tit" title="今日特价">今日特价</a></li>
+							<li><a href="#" class="tit" title="企业专区">企业专区</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			
+				$(".btnnav").click(function(){
+				$(".shoplist").css("display","none");	
+			});
+			
+		})
+			
+		
+	</script>
+</html>

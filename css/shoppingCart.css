@@ -1,0 +1,39 @@
+
+*{margin: 0; padding: 0;}
+#cart_wrap{width: 100%; background: #f5f7fa;}
+#head,#foot,#content{width: 1190px; margin: 0 auto;}
+
+#cart_wrap .nav_wrap{width: 100%; height: 50px;}
+#cart_wrap .nav_wrap .nav{width: 1190px; height: 50px; margin: 0 auto; background: #404144; position: relative;
+border-radius: 5px;}
+#cart_wrap .nav_wrap .nav .btnnav{width: 230px; height: 50px; background: #32c632; color: white;
+line-height: 50px; font-size: 18px; padding-left: 20px; box-sizing: border-box;
+ position: relative; border-radius: 5px 0 0 5px; cursor: pointer;}
+#cart_wrap .nav_wrap .nav .btnnav:after{content: ""; border-top: 5px solid #fff; border-left: 5px solid transparent;
+border-right: 5px solid transparent; position: absolute; top: 46%; right: 25px; z-index: 999;}
+#cart_wrap .nav_wrap .nav .links_clearfix ul{width: 960px; height: 50px; position: absolute; top: 0; left: 230px;}
+#cart_wrap .nav_wrap .nav .links_clearfix ul li{list-style: none; float: left; margin-left: 35px;}
+#cart_wrap .nav_wrap .nav .links_clearfix ul li a{font-size: 18px; line-height: 50px; color: white;}
+/*---------导航栏商品列表----------*/
+#cart_wrap .nav_wrap .nav .shoplist{width: 230px; height: 570px; position: absolute; top: 50px; left: 0;
+display: none; z-index: 999;}
+#cart_wrap .nav_wrap .nav .shoplist ul li{width: 230px; height: 70px; border: 1px solid #d1d1d1;
+padding-top: 18px; padding-left: 18px; box-sizing: border-box; background: #fff; cursor: pointer;
+border-top: none; list-style: none;}
+#cart_wrap .nav_wrap .nav .shoplist ul li a{width: 100%; font-size: 16px; color: #8bc632;}
+
+#content{background: white;}
+input[type=checkbox]{width: 20px; height: 20px; margin-top: 8px;}
+#massage{line-height: 50px; font-size: 24px; border-bottom: 1px solid #B6BAA2; color: #B6BAA2;
+padding-left: 20px; box-sizing: border-box; margin-top: 10px;}
+#content_lists{width: 1000px; margin: 0 auto;}
+#content_lists .list{line-height: 40px; color: red; text-align: center;}
+#content_lists .return_back{line-height: 40px; text-align: center;}
+#tbody tr{text-align: center;}
+#tbody .num{width: 50px;}
+#tbody .down,.up{width: 20px; height: 20px;}
+#tbody .list_num{position: relative; width: 120px;}
+#number{text-align: center;}
+#tbody .list_num .imgl,.imgr{width: 20px; height: 20px; display: block; position: absolute;}
+#tbody .list_num .imgl{background: url(../img/register.img/ico_a.gif) no-repeat; top: 45%; left: 5%;}
+#tbody .list_num .imgr{background: url(../img/register.img/ico_b.gif) no-repeat; top: 45%; right: 5%;}
